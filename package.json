@@ -1,0 +1,23 @@
+{
+    "name": "theme-newclassic",
+    "displayName": "New Classic Theme",
+    "description": "A theme inspired by Gedit and Pluma Classic theme",
+    "version": "1.0.5",
+    "publisher": "rishithaminol",
+    "repository": "https://github.com/rishithaminol/newclassic.git",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "New Classic Theme",
+                "uiTheme": "vs",
+                "path": "./themes/newclassic-color-theme.json"
+            }
+        ]
+    }
+}
