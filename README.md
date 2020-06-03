@@ -9,4 +9,4 @@ New classic theme is inspired by gedit and Pluma editors. Mainly this was develo
 
 ## Future
 
-In the future Lua and Javascript support will be added. Currently they may have some syntaxh highlighting issues.
+In the future Lua, Javascript and Bash shell scripting support will be added. Currently they may have some syntaxh highlighting issues.

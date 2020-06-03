@@ -179,6 +179,64 @@
 			}
 		},
 		{
+			"name": "Python Function definition",
+			"scope": [
+				"entity.name.function.python"
+			],
+			"settings": {
+				"foreground": "#008A8C"
+			}
+		},
+		{
+			"name": "Python Support Variable Magic",
+			"scope": [
+				"support.variable.magic.python"
+			],
+			"settings": {
+				"foreground": "#008A8C"
+			}
+		},
+		{
+			"name": "Python quotation marks",
+			"scope": [
+				"punctuation.definition.string.end.python",
+				"punctuation.definition.string.begin.python"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#FF00FF"
+			}
+		},
+		{
+			"name": "Python print and string formatter constants",
+			"scope": [
+				"constant.character.format.placeholder.other.python"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#685ACD"
+			}
+		},
+		{
+			"name": "Python constants imported from modules",
+			"scope": "constant.other.caps.python",
+			"settings": {
+				"foreground": "#9C5D27"
+			}
+		},
+		{
+			"name": "Python Keyword Operators",
+			"scope": [
+				"keyword.operator.python"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#000000"
+			}
+		},
+
+
+		{
 			"name": "Keywords",
 			"scope": [
 				"keyword.operator.comparison",
@@ -215,21 +273,13 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"support.variable", "support.variable.magic.python"
+				"support.variable",
 			],
 			"settings": {
 				"foreground": "#7A3E9D"
 			}
 		},
-		{
-			"name": "Python Support Variable Magic",
-			"scope": [
-				"support.variable.magic.python"
-			],
-			"settings": {
-				"foreground": "#008A8C"
-			}
-		},
+
 		{
 			"name": "Functions",
 			"scope": [
@@ -238,15 +288,6 @@
 			],
 			"settings": {
 				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Python Function definition",
-			"scope": [
-				"entity.name.function.python"
-			],
-			"settings": {
-				"foreground": "#008A8C"
 			}
 		},
 		{
@@ -265,7 +306,6 @@
 				"variable.parameter.function"
 			],
 			"settings": {
-				// "fontStyle": "bold",
 				"foreground": "#000000"
 			}
 		},
@@ -297,6 +337,8 @@
 				"fontStyle": "bold"
 			}
 		},
+
+
 		{
 			"name": "Numbers, Characters",
 			"scope": [
