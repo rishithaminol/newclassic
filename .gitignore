@@ -1,3 +1,4 @@
 .vscode
 .vscodeignore
 *.vsix
+*.code-workspace

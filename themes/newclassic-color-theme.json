@@ -227,11 +227,22 @@
 		{
 			"name": "Python Keyword Operators",
 			"scope": [
-				"keyword.operator.python"
+				"keyword.operator.python",
+				"keyword.operator.arithmetic.python", "entity.name.function.decorator.python"
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#000000"
+				"foreground": "#333333"
+			}
+		},
+		{
+			"name": "Python Decorators",
+			"scope": [
+				"entity.name.function.decorator.python"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#333333"
 			}
 		},
 
