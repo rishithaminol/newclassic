@@ -13,6 +13,6 @@ In the future Lua, Javascript and Bash shell scripting support will be added. Cu
 
 ## Screenshots
 
-![C programming](images/C_programming.png)
+![C programming](./images/C_programming.png)
 
-![Python](images/python_language.png)
+![Python](./images/python_language.png)

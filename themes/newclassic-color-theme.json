@@ -4,7 +4,8 @@
 		{
 			"scope": [
 				"meta.embedded",
-				"source.groovy.embedded"
+				"source.groovy.embedded",
+				"constant.character.brace"
 			],
 			"settings": {
 				"foreground": "#333333"
@@ -246,9 +247,48 @@
 			}
 		},
 
+		/* =========================== [Shell scripting] =============================== */
+		{
+			"name": "Shell scripting Comments",
+			"scope": [
+				"comment.line.number-sign.shell",
+				"punctuation.definition.comment.shell"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#0000FF"
+			}
+		},
+		{
+			"name": "Shell variables",
+			"scope": [
+				"variable.other.normal.shell",
+				"punctuation.definition.variable.shell"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#685ACD"
+			}
+		},
+
+
+		/* =========================== [Javascript] =============================== */
+		{
+			"name": "Shell scripting Comments",
+			"scope": [
+				"comment.block.documentation.js",
+				"punctuation.definition.comment.js",
+				"comment.block.js"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#0000FF"
+			}
+		},
+
 
 		{
-			"name": "Keywords",
+			"name": "Keyword Operators",
 			"scope": [
 				"keyword.operator.comparison",
 				"keyword.operator.assignment"
