@@ -170,6 +170,17 @@
 
 		/* =========================== [Python] =============================== */
 		{
+			"name": "Python Comments",
+			"scope": [
+				"punctuation.definition.comment.python",
+				"comment.line.number-sign.python"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#0000FF"
+			}
+		},
+		{
 			"name": "Keyword import",
 			"scope": [
 				"keyword.control.import.python",
