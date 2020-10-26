@@ -6,6 +6,9 @@ New classic theme is inspired by gedit and Pluma editors. Mainly this was develo
 
 * C
 * Python
+* Shell Scripting
+* Javascript
+* C++
 
 ## Future
 

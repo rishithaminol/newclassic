@@ -1,6 +1,55 @@
 {
 	"name": "New Classic",
 	"tokenColors": [
+		/* =========================== [Common] =============================== */
+		{
+			"name": "Numbers, Characters",
+			"scope": [
+				"constant.numeric",
+				"constant.character",
+				"constant"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#FF00FF"
+			}
+		},
+		{
+			"name": "Strings",
+			"scope": "string",
+			"settings": {
+				"foreground": "#FF00FF"
+			}
+		},
+		{
+			"name": "Strings: Escape Sequences",
+			"scope": "constant.character.escape",
+			"settings": {
+				"foreground": "#777777"
+			}
+		},
+		{
+			"name": "Strings: Regular Expressions",
+			"scope": "string.regexp",
+			"settings": {
+				"foreground": "#4B69C6"
+			}
+		},
+		{
+			"name": "Strings: Symbols",
+			"scope": "constant.other.symbol",
+			"settings": {
+				"foreground": "#9C5D27"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": "punctuation",
+			"settings": {
+				"foreground": "#777777"
+			}
+		},
+
 		{
 			"scope": [
 				"meta.embedded",
@@ -60,6 +109,108 @@
 			}
 		},
 
+		{
+			"name": "Keyword Operators",
+			"scope": [
+				"keyword.operator.comparison",
+				"keyword.operator.assignment"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Types",
+			"scope": [
+				"storage.type",
+				// "support.type"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#448C27"
+			}
+		},
+		{
+			"name": "Language Constants",
+			"scope": [
+				"constant.language",
+				"support.constant",
+				"variable.language"
+			],
+			"settings": {
+				"foreground": "#9C5D27"
+			}
+		},
+		{
+			"name": "Variables",
+			"scope": [
+				"variable",
+				"support.variable",
+			],
+			"settings": {
+				"foreground": "#3C3C3C"
+			}
+		},
+
+		{
+			"name": "Functions",
+			"scope": [
+				"entity.name.function",
+				"support.function"
+			],
+			"settings": {
+				"foreground": "#3C3C3C"
+			}
+		},
+		{
+			"name": "Builtin functions",
+			"scope": [
+				"support.function.builtin"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#A52A2A"
+			}
+		},
+		{
+			"name": "Function Parameters",
+			"scope": [
+				"variable.parameter.function"
+			],
+			"settings": {
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Classes",
+			"scope": [
+				// "entity.name.type",
+				"entity.name.namespace",
+				"entity.name.scope-resolution",
+				"entity.other.inherited-class",
+				"support.class"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#7A3E9D"
+			}
+		},
+		{
+			"name": "Exceptions",
+			"scope": "entity.name.exception",
+			"settings": {
+				"foreground": "#660000"
+			}
+		},
+		{
+			"name": "Sections",
+			"scope": "entity.name.section",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+
 		/* =========================== [C programming] =============================== */
 		{
 			"name": "C programming Comments",
@@ -116,7 +267,8 @@
 				"keyword.control.directive.include.c",
 				"punctuation.definition.directive.c",
 				"keyword.control.directive.conditional.c",
-				"entity.name.function.preprocessor.c"
+				// "entity.name.function.preprocessor.c",
+				"keyword.control.directive.define.c"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -167,6 +319,140 @@
 				"foreground": "#000000"
 			}
 		},
+		{
+			"name": "C Functions",
+			"scope": [
+				"entity.name.function.c",
+				"meta.function-call.c"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "C array bracked",
+			"scope": [
+				"storage.modifier.array.bracket.square.c"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#3C3C3C"
+			}
+		},
+		{
+			"name": "C Posix reserved type Storage Modifiers",
+			"scope": [
+				"support.type.posix-reserved.c",
+				"storage.type.built-in.c"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#008A8C"
+			}
+		},
+		{
+			"name": "C macro",
+			"scope": [
+				"entity.name.function.preprocessor",
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#685ACD"
+			}
+		},
+
+
+		/* =========================== [C++ programming] =============================== */
+		{
+			"name": "C++ programming Comments",
+			"scope": [
+				"comment.line.double-slash.cpp",
+				"comment.block.cpp",
+				"punctuation.definition.comment.cpp",
+				"punctuation.definition.comment.begin.cpp",
+				"punctuation.definition.comment.end.cpp",
+				"comment.block.documentation.cpp",
+				"punctuation.definition.comment.begin.documentation.cpp",
+				"punctuation.definition.comment.end.documentation.cpp"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#0000FF"
+			}
+		},
+		{
+			"name": "C++ programming Comments Doxygen",
+			"scope": [
+				"storage.type.class.doxygen.cpp",
+				"markup.bold.doxygen.cpp"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#0000FF"
+			}
+		},
+		{
+			"name": "C++ Operators",
+			"scope": [
+				"keyword.operator.increment.cpp"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "C++ macro keywords",
+			"scope": [
+				"keyword.control.directive.conditional.ifdef.cpp",
+				"keyword.control.directive.conditional.ifndef.cpp",
+				"entity.name.function.preprocessor.cpp",
+				"keyword.control.directive.else.cpp",
+				"keyword.control.directive.endif.cpp",
+				"keyword.control.directive.include.cpp",
+				"punctuation.definition.directive.cpp",
+				"keyword.control.directive.define.cpp"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#9C20F0"
+			}
+		},
+		{
+			"name": "C++ Storage Modifiers",
+			"scope": [
+				"storage.modifier.static.cpp"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#448C27"
+			}
+		},
+		{
+			"name": "C++ Storage Types",
+			"scope": [
+				"storage.type.struct.cpp",
+				"storage.type.struct.declare.cpp"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#A52A2A"
+			}
+		},
+		{
+			"name": "C++ Numbers, Characters",
+			"scope": [
+				"keyword.other.unit.octal.cpp",
+				"punctuation.definition.string.end.cpp",
+				"punctuation.definition.string.begin.cpp"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#FF00FF"
+			}
+		},
+
 
 		/* =========================== [Python] =============================== */
 		{
@@ -226,7 +512,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#685ACD"
+				"foreground": "#6A5ACD"
 			}
 		},
 		{
@@ -258,12 +544,15 @@
 			}
 		},
 
+
 		/* =========================== [Shell scripting] =============================== */
 		{
 			"name": "Shell scripting Comments",
 			"scope": [
 				"comment.line.number-sign.shell",
-				"punctuation.definition.comment.shell"
+				"punctuation.definition.comment.shell",
+				"punctuation.definition.comment.shebang.shell",
+				"comment.line.number-sign.shebang.shell"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -278,17 +567,18 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#685ACD"
+				"foreground": "#6A5ACD"
 			}
 		},
 
 
 		/* =========================== [Javascript] =============================== */
 		{
-			"name": "Shell scripting Comments",
+			"name": "Javascript Comments",
 			"scope": [
 				"comment.block.documentation.js",
 				"punctuation.definition.comment.js",
+				"comment.line.double-slash.js",
 				"comment.block.js"
 			],
 			"settings": {
@@ -298,159 +588,8 @@
 		},
 
 
-		{
-			"name": "Keyword Operators",
-			"scope": [
-				"keyword.operator.comparison",
-				"keyword.operator.assignment"
-			],
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Types",
-			"scope": [
-				"storage.type",
-				"support.type"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#448C27"
-			}
-		},
-		{
-			"name": "Language Constants",
-			"scope": [
-				"constant.language",
-				"support.constant",
-				"variable.language"
-			],
-			"settings": {
-				"foreground": "#9C5D27"
-			}
-		},
-		{
-			"name": "Variables",
-			"scope": [
-				"variable",
-				"support.variable",
-			],
-			"settings": {
-				"foreground": "#7A3E9D"
-			}
-		},
 
-		{
-			"name": "Functions",
-			"scope": [
-				"entity.name.function",
-				"support.function"
-			],
-			"settings": {
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Builtin functions",
-			"scope": [
-				"support.function.builtin"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#A52A2A"
-			}
-		},
-		{
-			"name": "Function Parameters",
-			"scope": [
-				"variable.parameter.function"
-			],
-			"settings": {
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "Classes",
-			"scope": [
-				"entity.name.type",
-				"entity.name.namespace",
-				"entity.name.scope-resolution",
-				"entity.other.inherited-class",
-				"support.class"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#7A3E9D"
-			}
-		},
-		{
-			"name": "Exceptions",
-			"scope": "entity.name.exception",
-			"settings": {
-				"foreground": "#660000"
-			}
-		},
-		{
-			"name": "Sections",
-			"scope": "entity.name.section",
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-
-
-		{
-			"name": "Numbers, Characters",
-			"scope": [
-				"constant.numeric",
-				"constant.character",
-				"constant"
-			],
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#FF00FF"
-			}
-		},
-		{
-			"name": "Strings",
-			"scope": "string",
-			"settings": {
-				"foreground": "#FF00FF"
-			}
-		},
-		{
-			"name": "Strings: Escape Sequences",
-			"scope": "constant.character.escape",
-			"settings": {
-				"foreground": "#777777"
-			}
-		},
-		{
-			"name": "Strings: Regular Expressions",
-			"scope": "string.regexp",
-			"settings": {
-				"foreground": "#4B69C6"
-			}
-		},
-		{
-			"name": "Strings: Symbols",
-			"scope": "constant.other.symbol",
-			"settings": {
-				"foreground": "#9C5D27"
-			}
-		},
-		{
-			"name": "Punctuation",
-			"scope": "punctuation",
-			"settings": {
-				"foreground": "#777777"
-			}
-		},
-		
-		
-		/* ============================================ */
+		/* =========================== [HTML] =============================== */
 		{
 			"name": "HTML: Doctype Declaration",
 			"scope": [
@@ -466,20 +605,13 @@
 		{
 			"name": "HTML: Tags",
 			"scope": [
-				"meta.tag",
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html"
+				"punctuation.definition.tag.end.html",
+				"entity.name.tag"
 			],
 			"settings": {
-				"foreground": "#91B3E0"
-			}
-		},
-		{
-			"name": "HTML: Tag Names",
-			"scope": "entity.name.tag",
-			"settings": {
-				"foreground": "#4B69C6"
+				"foreground": "#008A8C"
 			}
 		},
 		{
@@ -490,7 +622,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#8190A0"
+				"foreground": "#6A5ACD"
 			}
 		},
 		{
@@ -503,8 +635,22 @@
 				"foreground": "#9C5D27"
 			}
 		},
-		
-		/* ============================================ */
+
+
+
+		/* =========================== [CSS] =============================== */
+		{
+			"name": "CSS Comments",
+			"scope": [
+				"punctuation.definition.comment.begin.css",
+				"punctuation.definition.comment.end.css",
+				"comment.block.css"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#0000FF"
+			}
+		},
 		{
 			"name": "CSS: Selectors",
 			"scope": [
@@ -545,8 +691,8 @@
 				"fontStyle": "bold"
 			}
 		},
-		
-		
+
+
 		/* ============================================ */
 		{
 			"name": "Markup: Changed",
@@ -667,8 +813,8 @@
 				"foreground": "#9C5D27"
 			}
 		},
-		
-		
+
+
 		/* ============================================ */
 		{
 			"name": "Extra: Diff Range",
@@ -745,7 +891,7 @@
 		"peekViewResult.background": "#F2F8FC",
 		"peekView.border": "#705697",
 		"peekViewResult.matchHighlightBackground": "#93C6D6",
-		"statusBar.background": "#705697",
+		"statusBar.background": "#3C3B37",
 		"statusBar.noFolderBackground": "#705697",
 		"statusBar.debuggingBackground": "#705697",
 		"statusBarItem.remoteBackground": "#4e3c69",
