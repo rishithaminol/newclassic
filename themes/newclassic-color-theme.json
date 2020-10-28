@@ -268,7 +268,8 @@
 				"punctuation.definition.directive.c",
 				"keyword.control.directive.conditional.c",
 				// "entity.name.function.preprocessor.c",
-				"keyword.control.directive.define.c"
+				"keyword.control.directive.define.c",
+				"keyword.control.directive.undef.c"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -361,6 +362,16 @@
 				"foreground": "#685ACD"
 			}
 		},
+		{
+			"name": "C Numbers, Characters",
+			"scope": [
+				"keyword.other.unit.suffix.integer.c",
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#FF00FF"
+			}
+		},
 
 
 		/* =========================== [C++ programming] =============================== */
@@ -412,7 +423,8 @@
 				"keyword.control.directive.endif.cpp",
 				"keyword.control.directive.include.cpp",
 				"punctuation.definition.directive.cpp",
-				"keyword.control.directive.define.cpp"
+				"keyword.control.directive.define.cpp",
+				"keyword.control.directive.undef.cpp"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -450,6 +462,17 @@
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#FF00FF"
+			}
+		},
+		{
+			"name": "C++ Keyword Operators",
+			"scope": [
+				"storage.modifier.pointer.cpp",
+				"keyword.operator.cpp"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#000000"
 			}
 		},
 
