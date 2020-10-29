@@ -2,7 +2,7 @@
     "name": "theme-newclassic",
     "displayName": "New Classic Theme",
     "description": "A theme inspired by Gedit and Pluma Classic theme",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "publisher": "rishithaminol",
     "repository": "https://github.com/rishithaminol/newclassic.git",
     "icon": "images/logo.png",

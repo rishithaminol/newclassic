@@ -1,6 +1,6 @@
 # New Classic Theme
 
-New classic theme is inspired by gedit and Pluma editors. Mainly this was developped for C programming language.
+New classic theme is inspired by gedit and Pluma editors. Mainly this was developped for C programming language syntax highlighting.
 
 ## Supported Languages
 
